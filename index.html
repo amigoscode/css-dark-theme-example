@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        :root {
+            --text-color: rgb(41, 41, 41);
+            --bg-color: white;
+            --p-color: orange;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        p {
+            color: var(--p-color);
+            font-size: 1.4em;
+        }
+        
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        @media(prefers-color-scheme: dark) {
+            :root {
+                --text-color: orange;
+                --bg-color: rgb(41, 41, 41);
+                --p-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class='wrapper'>
+        <img src="./logo.png"/>
+        <h1>Dark Mode with CSS</h1>
+        <p>This is awesome</p>
+    </div>
+</body>
+</html>
